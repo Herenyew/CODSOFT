@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hermela's portfolio</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <script src="https://kit.fontawesome.com/ee493ce4ae.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#skills">skills</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>junior web developer</p>
+                <h1>Hi, I'm  <span>Hermela Fitigu</span>
+                   </h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about_c1">
+                   <img src="/images/about.jpg" alt=""> 
+                </div>
+                <div class="about_c2">
+                    <h1>About Me</h1> 
+                    <p id="about">
+                        Hello! I'm Hermela, a passionate junior web developer
+                         with a keen eye for detail and a love
+                         for creating engaging, user-friendly websites.
+                         I currently undergraduat student at UAEU.
+                         with a focus on  
+                         HTML, CSS, JavaScript, React
+                        and node.js. I'm excited to start my journey in the tech world.
+
+                    </p>
+                    <a href="/images/CV.pdf" target="_blank" download="" ><button class="btn">see my resume</button></a>
+                </div>
+            </div>
+       </div>
+    </div>
+
+    <div id="skills">
+        <div class="container"> 
+            <h1 >Skills</h1>
+            <div class="skills_list">
+                 <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front End</h2>
+                    <p>As a junior web developer, I specialize in front-end 
+                        technologies with a solid foundation in HTML5, CSS3, 
+                        and JavaScript. I’m proficient in modern frameworks
+                         and libraries like React and Vue.js, which I use to 
+                         build dynamic and responsive user interfaces.
+                          My experience extends to utilizing design tools such as Figma,
+                         and I’m adept with version control using Git and GitHub
+                    </p>
+                 </div>
+                 <div>
+                        <i class="fa-brands fa-java"></i>
+                        <h2>Programming languages</h2>
+                        <p>
+                            I have a solid grasp of algorithms and object-oriented programming, 
+                            using Java and Python to develop efficient and scalable solutions. 
+                            I design and implement algorithms for data processing and problem-solving, 
+                            and apply OOP principles to write clean, modular code. Whether working with Java’s 
+                            robust libraries or Python’s versatility, I’m skilled at tackling complex 
+                            programming challenges.
+                        </p>
+                 </div>
+                 <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Data Science</h2>
+                    <p>
+                        I have a strong foundation in data science, 
+                        with experience in data analysis, statistical modeling, 
+                        and machine learning using Python and its libraries, 
+                        such as pandas, NumPy, and scikit-learn. I am adept at data 
+                        visualization with tools like Matplotlib and Seaborn, and proficient 
+                        in SQL for data querying and manipulation.
+                    </p>
+                 </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="projects">
+       <div class="container">
+            <h1><span>My Projects</span></h1> 
+            <div class="projects_list">
+                <div class="work">
+                    <img src=" /images/work1.jpeg" alt=""> 
+                    <div class="layer">
+                        
+
+                        <h3>Weather App</h3><br>
+                        <p>
+                            The app gives access to weather pridiction of different cities in the world. 
+                        </p>
+                        <a href="https://hermelas-weather-app.netlify.app/" target="_blank">
+                            <i class="fa-solid fa-link"></i>
+                        </a>
+
+                    </div>
+                </div>
+                
+            </div>  
+              
+        </div>
+
+    </div>
+
+   <div id="contact">
+          <div class="container">
+               <div class="row">
+                 <div class="contact_left">
+                    
+                    <h1><span>Contact me</span></h1>
+                    <br>
+                    <p><i class="fa-regular fa-paper-plane"></i> hereniyew1112@gmail.com</p>
+                    <div class="social-media">
+                      <a href="https://www.instagram.com/her_enyy/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                      <a href="https://www.linkedin.com/in/hermelafitigu/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                      <a href="https://www.facebook.com/profile.php?id=100089234282422" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+
+
+                    </div>
+                 </div>
+                 <div class="contact-right">
+
+                    <form name="submit-to-google-sheet" >
+                        <input type="text" name="Name" placeholder="your name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Enter Your message"></textarea>
+                        <button type="submit" class="btn">Submit </button>
+                    </form>
+                    <br>
+                    <span id="msg"></span>
+                 </div>
+
+
+               </div>
+
+
+          </div>
+        <div class="copyright">
+            <p>Copyright © 2024 Hermela.</p>
+        </div>
+      
+   </div>
+   <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwYRMsSAHJxij4fXkEF68tQZ1mrpP6LhB-NVeCU2GX1m1ikvUQbt_dz7CKl7KeDSoPH/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="sent!"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000 )
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html> 

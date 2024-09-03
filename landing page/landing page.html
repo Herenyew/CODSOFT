@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+    <script src="https://kit.fontawesome.com/ee493ce4ae.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <style> 
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="poster">
+            <img id="poster" src="piz.jpeg" alt="Pizza">
+            <div class="navigation">
+                <div><a class="active" href="#home">Home</a></div>
+                <div><a href="https://www.dominos.ae/en/pages/order/menu#!/menu/category/viewall/">Menu</a></div>
+                <div><a href="#about">about</a></div>
+                <div><a href="#footer">Buy</a></div>  
+            </div>
+            <div class="center">
+                <h1>Delicious Pizzas Delivered Hot and Fresh !</h1>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div id="about">
+            <h2>About Us</h2><br>
+            <p class="para">
+                Welcome to Pizza Hut, where we turn every meal into a celebration! 
+                Since our inception, we’ve been dedicated to delivering delicious, 
+                freshly-made pizzas crafted with the finest ingredients.
+                 Whether you're craving a classic cheese pizza or one of our innovative
+                specialty creations, our commitment to quality and flavor is unparalleled.
+                From our cozy dine-in experience to convenient delivery options, we strive
+                 to make every visit memorable. Join us in savoring the taste of perfection with each bite!  
+            </p>
+        </div>
+        <h2>Why choose us</h2>
+        <div class="why" id="why">
+            
+            
+            <div>
+                <i class="fa-solid fa-kitchen-set"></i>
+               <h2>Best Chef</h2>
+               <p>our chef is astrained professional cook who is 
+                proficient in all aspects of pizza preparation</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-pizza-slice"></i>
+                <h2>Fresh Pizza</h2>
+                <p>Always get fresh pizza which has not been preserved</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-truck-fast"></i>
+                <h2>Fast Delivery</h2>
+                <p>get fast pizza delivery, fast easy online ordering for
+                     takeout and delivery from pizza huts near you</p>
+            </div>
+
+        </div>
+
+        
+    </section>
+    <footer id="footer">
+        <div class="contact">
+            <br>
+            <div class="container">
+                <p><i class="fa-solid fa-location-dot"></i> Dubai mall, Dubai</p>
+            <p><i class="fa-solid fa-phone"></i> 971-056-579-489</p>
+            <p><i class="fa-regular fa-envelope"></i> support@pizzahut.com</p>
+            </div>
+            
+        </div>
+        <button><strong>Buy now</strong></button>
+    </footer>
+    <script>
+        function changebutton() {
+            let name = prompt("Enter your name");
+            let address = prompt("Enter your phone");
+            
+            alert("Hey "+name+", we will reach out to you soon via whatsapp!");
+        }
+        let button = document.querySelector("button");
+        button.addEventListener("click", changebutton);
+    </script>
+</body>
+</html>
+
+       
